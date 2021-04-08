@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* GERAL */ 
+
+.logo{
+    height: 45px;
+    width: auto;
+}
+
+.btn-primary{
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 13px 35px;
+    border-radius: 30px;
+    border: 2px solid;
+    transition: all 800ms ease;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: #FF8200;
+    border-color: #FF8200;
+    
+}
+
+/* MENU */ 
+
+.nav-menu{
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    position: fixed;    
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-menu .nav-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-menu .nav-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+
+.nav-menu .nav-container ul li {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+.nav-menu .nav-container ul li:hover{
+    cursor: pointer;
+    color: #FFDD00;
+}
+
+/* PRINCIPAL SECÇÃO */ 
+
+#sec-home{
+    display: flex;
+    height: 100vh;
+    background:url(/img/header_site_corona_desk.png);
+    justify-content: left;
+    width: 100%;
+}
+#sec-home .sec-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 135px;
+    margin-top: 30px;    
+}
+
+#sec-home .sec-container h1{
+    font-size: 52px;
+    color: white;
+    width: 600px;
+    line-height: 56px;
+}
+
+#sec-home .sec-container p{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    width: 330px;
+    line-height: 2.25rem;
+    margin: 30px 0;
+}
+
+#sec-home .sec-container button{
+    background-color: #FF8200;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 15px;
+    font-size: 16px;
+    width: 150px;
+}
+
+/* ÁREA DO APP */ 
+
+#sec-app{
+    display: flex;
+    background-color: #FFDD00;    
+
+}
+
+#sec-app .sec-img{
+    position: relative;
+    margin-top: -40px;
+    margin-left: 135px;
+}
+
+#sec-app .sec-text-app{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 32px;
+    color: #4A4B4A;
+    width: 420px;
+}
+
+#sec-app .sec-text-app h4{
+    font-size: 20px;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+#sec-app .sec-text-app h2{
+    line-height: 3.5rem;
+    font-weight: 300;
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+#sec-app .sec-text-app p{
+    font-size: 28px;
+    line-height: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#sec-app .sec-text-app .sec-buttons-app{
+    display: flex;
+    column-gap: 20px;
+    height: 60px;
+    width: 200px;
+    cursor: pointer;
+}
+
+
+/* ÁREA DO GERENCIA SUA CORRIDA */ 
+
+#sec-empresa{
+    display: flex;
+    background: url(/img/home__99corp__bg.jpg);   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sec-empresa .sec-empresa-card{
+    display: block;
+    width: 450px;
+    height: 544px;
+    background: white;
+    border-radius:4px;
+    color: #4A4B4A;
+    padding: 40px;
+    margin: 250px 0 200px 135px;
+}
+
+#sec-empresa .sec-empresa-card h4{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#sec-empresa .sec-empresa-card h2{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+#sec-empresa .sec-empresa-card h3{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#sec-empresa .sec-empresa-card a{
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #ff8200;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#sec-empresa .sec-empresa-card a:hover{
+    text-decoration: underline;
+}
+
+#sec-empresa .sec-empresa-card a::before{
+    content: '';
+    width: 7px;
+    height: 12px;
+    display: block;
+    background: url(//99app.com/wp-content/themes/99app/assets/css/../img/icon__arrow-right--orange.svg?1527750196);
+    background-size: 7px 12px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ÁREA DO GERENCIA SUA CORRIDA */
+
+#sec-seguranca{
+    display: flex;
+    background-color: #f0f0f0;
+}
+
+#sec-seguranca .sec-container{
+    display: flex;
+    background-color: #FFDD00;
+    margin: 100px 135px 100px 135px;
+    width: 1116px;
+    height:487px;
+}
+
+#sec-seguranca .sec-container .sec-img{
+    position: relative;
+    margin: 60px -60px;
+}
+
+#sec-seguranca .sec-container .sec-img img{
+    width: 500px;
+}
+
+#sec-seguranca .sec-container .sec-text{
+    color: #4A4B4A;
+    margin: 60px 120px;
+}
+
+#sec-seguranca .sec-container .sec-text h4{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#sec-seguranca .sec-container .sec-text h2{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+#sec-seguranca .sec-container .sec-text h3{
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#sec-seguranca .sec-container .sec-text a{
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+#sec-seguranca .sec-container .sec-text a:hover{
+    text-decoration: underline;
+}
+
+#sec-seguranca .sec-container .sec-text a::before{
+    content: '';
+    width: 7px;
+    height: 12px;
+    display: block;
+    background: url(//99app.com/wp-content/themes/99app/assets/css/../img/icon__arrow-right--black.svg?1527750196);
+    background-size: 7px 12px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* FOOTER */ 
+
+#footer{
+    background: black;
+    color: white;
+    padding: 80px 0 50px 0;
+}
+#footer img{
+    margin-left: 100px;
+    width: 30px;
+}
+
+#footer .footer-content{
+    display: flex;
+    width: 85%;
+    margin: 0 120px 0px 90px;
+    justify-content: space-between; 
+}
+
+#footer .footer-content .footer-menu{
+    margin: 0 10px;
+    list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item{
+    margin: 20px 0;
+    transition: all 500ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover{
+    color: #FFDD00;
+    cursor: pointer;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item-short{
+    margin: 20px 0;
+    font-size: 12px;
+    transition: all 500ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item-short:hover{
+    color: #FFDD00;
+    cursor: pointer;
+}
+
+#footer .footer-content .footer-menu .footer-menu-icon{
+    margin: 20px 0;
+    transition: all 500ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-icon img:hover{
+    cursor: pointer;
+}
+
+#footer .footer-content .footer-menu .footer-menu-btn button{
+    display: inline-block;
+    border: 2px solid #000;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 28px;
+    padding: 14px 25px;
+}
+
+#footer .footer-content .footer-menu li{
+    font-size: 16px;
+}
+
+/* FOOTER INFO */
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+    padding-top: 50px;
+}
+
+.footer-info .footer-info-items{
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item{
+    margin: 0 10px;    
+    transition: all 500ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-item:hover{
+    color: #FFDD00;
+    cursor: pointer;
+}
+
+.footer-info .rights .country{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-info .rights .country p{
+    transition: all 500ms ease;
+}
+
+.footer-info .rights .country p:hover{
+    color: #FFDD00;
+    cursor: pointer;
+}
+
+.footer-info .rights .country .img{
+    height: 20px;
+    width: auto;
+    position: relative;
+    margin-right: -80px;
+    
+}
